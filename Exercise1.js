@@ -3,8 +3,10 @@ function calculateAverage(numbers) {
     return 0;
   }
   let sum = 0;
+  // 👇 here you can use, ES6
   for (let i = 0; i < numbers.length; i++) {
     sum += numbers[i];
   }
   return sum / numbers.length;
 }
+
