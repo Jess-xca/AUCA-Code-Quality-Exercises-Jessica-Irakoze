@@ -1,6 +1,3 @@
 function discount(totalAmount) {
-    if (totalAmount > 100) {
-        return totalAmount * 0.1;
-    }
-    return totalAmount * 0.05;
+  return totalAmount * (totalAmount > 100 ? 0.1 : 0.05);
 }
