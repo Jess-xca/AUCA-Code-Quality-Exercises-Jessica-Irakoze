@@ -1,9 +1,5 @@
 function getMatrixSum(matrix) {
-    let sum = 0;
-    for (let i = 0; i < matrix.length; i++) {
-        for (let j = 0; j < matrix[i].length; j++) {
-            sum += matrix[i][j];
-        }
-    }
-    return sum;
+  return matrix.reduce((sum, row) => 
+    sum + row.reduce((rowSum, value) => rowSum + value, 0)
+  , 0);
 }
